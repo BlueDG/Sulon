@@ -1,9 +1,14 @@
 import styled from '@xstyled/styled-components'
-import '../index.css'
+
 
 export const Text = styled.div`
     color: black;
     text-align: center;
+    padding: 3% 0 3% 0;
+    font-family: 'alive';
+    text-transform: uppercase;
+    background-color: yellow;
+    width: 100%;
 `
 
 export const Title = styled.h1`
@@ -11,12 +16,13 @@ export const Title = styled.h1`
     text-align:center;
     color: black;
     text-transform: uppercase;
-    font-family: 'sulon';
+    font-family: 'solo';
 `
 
 export const Footer = styled.div`
     color: grey;
     text-align: right;
     background-color: lightgrey;
-    font-family: 'textIntro';
+    font-family: 'alive';
+    text-transform: uppercase;
 `

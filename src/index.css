@@ -1,9 +1,22 @@
 @font-face {
     font-family: 'sulon';
-    src: local('sulon'), url(./fonts/PROMETHEUS.ttf) format('ttf');
+    font-style: normal;
+    font-weight: 400;
+    src: local('PROMETHEUS'), url(./fonts/PROMETHEUS.ttf) format('ttf');
   }
 
   @font-face {
-    font-family: 'textIntro';
-    src: local('textIntro'), url(./fonts/alive.ttf) format('ttf');
+    font-family: 'alive';
+    font-style: normal;
+    font-weight: 400;
+    src: local('AliveinaScienceFiction'), url(./fonts/AliveinaScienceFiction.ttf) format('ttf');
   }
+
+  @font-face {
+    font-family: 'solo';
+    font-style: normal;
+    font-weight: 400;
+    src: local('SoloistStraight'), url(./fonts/soloiststraight1.ttf) format('ttf');
+  }
+
+  

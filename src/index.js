@@ -4,8 +4,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import './fonts/alive.ttf';
+import './fonts/AliveinaScienceFiction.ttf';
 import './fonts/PROMETHEUS.ttf';
+import './fonts/soloiststraight1.ttf';
+import './video/space.mp4';
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
