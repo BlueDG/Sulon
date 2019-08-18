@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'title';
+    src: local('title'), url(./fonts/PROMETHEUS.ttf) format('ttf');
+  }
+
+  @font-face {
+    font-family: 'textIntro';
+    src: local('textIntro'), url(./fonts/Alive\ in\ Science\ Fiction.ttf) format('ttf');
+  }
