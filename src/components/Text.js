@@ -1,5 +1,5 @@
 import styled from '@xstyled/styled-components'
-
+import '../index.css'
 
 export const Text = styled.div`
     color: black;
@@ -11,12 +11,12 @@ export const Title = styled.h1`
     text-align:center;
     color: black;
     text-transform: uppercase;
-    style={{ fontFamily: "title"}}
+    font-family: 'sulon';
 `
 
 export const Footer = styled.div`
     color: grey;
     text-align: right;
     background-color: lightgrey;
-
+    font-family: 'textIntro';
 `
