@@ -9,6 +9,7 @@
     "react-bootstrap": "^1.0.0-beta.11",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
+    "react-video-cover": "^1.2.2",
     "styled-components": "^4.3.2"
   },
   "scripts": {
@@ -36,9 +37,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
-    "babel-loader": "^8.0.6",
-    "@storybook/react": "^5.1.11",
     "@storybook/addon-actions": "^5.1.11",
-    "@storybook/addon-links": "^5.1.11"
+    "@storybook/addon-links": "^5.1.11",
+    "@storybook/react": "^5.1.11",
+    "babel-loader": "^8.0.6"
   }
 }
