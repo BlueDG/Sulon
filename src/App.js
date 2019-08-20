@@ -1,23 +1,40 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {Text, Title, Footer} from "./components/Text"
 import {Container} from "./components/Container"
-import {VideoContainer} from "./components/VideoContainer";
+import {InputText} from './components/Input'
+import Axios from 'axios'
 
-function App() {
+
+
+export default function App() {
+
+  const [request, setRequest] = useState();
+  const [data, setData] = useState([]);
+  const [searchType, setSearchType] = useState("people");
+
+  useEffect(()=> {
+    Axios.get('https://swapi.co/api/${searchType}', {
+      params: {
+        query: request,
+      },
+    })
+    .then(res => setData(res.data.results))
+    .catch(_=> setData([]))
+    }, [request, searchType])
+
+
   return (
     <>
-    <VideoContainer>
     <Container>
     <Title>Sulon</Title>
     <Text>A repository of knowledge from the Star Wars universe from Episode I to Episode VI.</Text>
+    <InputText setRequest={setRequest}/>
     </Container>
-    </VideoContainer>
-    <Footer className="fixed-bottom text-center py-3">Data from <a href="https://swapi.co/" className="card-link">SWAPI.co</a></Footer>
+    <Container>
     
-
-
+    </Container>
+    <Footer className="fixed-bottom text-center py-1.5">Data from <a href="https://swapi.co/" className="card-link">SWAPI.co</a></Footer>
     </>
   )
 }
 
-export default App;

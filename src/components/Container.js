@@ -6,7 +6,8 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 align-items: center;
-margin-top: 40px;
-
+padding-top: 40px;
+background-image: url('https://wallpapercave.com/wp/gfwPusm.jpg');
+padding-bottom: 100%;
 `
 
