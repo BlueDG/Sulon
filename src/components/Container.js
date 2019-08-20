@@ -9,5 +9,6 @@ align-items: center;
 padding-top: 40px;
 background-image: url('https://wallpapercave.com/wp/gfwPusm.jpg');
 padding-bottom: 100%;
+color: yellow;
 `
 

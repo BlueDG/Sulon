@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react'
 import {Text, Title, Footer} from "./components/Text"
 import {Container} from "./components/Container"
-import {InputText} from './components/Input'
+import InputText from './components/Input'
 import Axios from 'axios'
 
 
 
 export default function App() {
 
-  const [request, setRequest] = useState();
+  const [request, setRequest] = useState('');
   const [data, setData] = useState([]);
   const [searchType, setSearchType] = useState("people");
 
