@@ -10,7 +10,7 @@ export default function App() {
 
   const [request, setRequest] = useState('');
   const [data, setData] = useState([]);
-  const [searchType, setSearchType] = useState('');
+  const [searchType, setSearchType] = useState('people');
 
   useEffect(()=> {
     Axios.get(`https://swapi.co/api/${searchType}/?search=${request}`)

@@ -21,7 +21,7 @@ padding: 1% 0 1% 0;
 
 export const Container3 = styled.box`
 display: flex;
-padding: 2% 0 2% 0;
+padding: 5% 0 2% 0;
 justify-content: space-around;
 width: 100%;
 flex-direction: column;

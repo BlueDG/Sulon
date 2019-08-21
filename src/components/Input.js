@@ -3,7 +3,7 @@ import styled from "@xstyled/styled-components"
 
 export const InputText = styled.input`
 display: flex;
-margin: 5vh 0 5vh 0;
+
 border-radius: 15px;
 width: 300px;
 &:focus{
