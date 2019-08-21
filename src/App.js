@@ -27,7 +27,7 @@ export default function App() {
     <Text>A repository of knowledge from the Star Wars universe from Episode I to Episode VI.</Text>
 
     <Container2>
-    {Array.from(["people", "species", "starships", "planets", "vehicles", "films"]).map((e,i)=>{
+    {Array.from(["people", "species", "starships", "planets", "vehicles"]).map((e,i)=>{
       return (
         <div key={i}>
           <label>{e}</label>
