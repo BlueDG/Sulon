@@ -2,7 +2,8 @@ import React from "react"
 import styled from "@xstyled/styled-components"
 
 export const InputText = styled.input`
-margin: 10px;
+display: flex;
+margin: 5vh 0 5vh 0;
 border-radius: 15px;
 width: 300px;
 &:focus{

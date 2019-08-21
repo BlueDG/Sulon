@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {Text, Title, Footer} from "./components/Text"
-import {Container} from "./components/Container"
+import {Container1, Container2, Container3} from "./components/Container"
 import InputText from './components/Input'
 import Axios from 'axios'
 
@@ -10,7 +10,7 @@ export default function App() {
 
   const [request, setRequest] = useState('');
   const [data, setData] = useState([]);
-  const [searchType, setSearchType] = useState("people");
+  const [searchType, setSearchType] = useState('');
 
   useEffect(()=> {
     Axios.get(`https://swapi.co/api/${searchType}/?search=${request}`)
@@ -21,10 +21,12 @@ export default function App() {
 
   return (
     <>
-    <Container>
+    <Container1>
+
     <Title>Sulon</Title>
     <Text>A repository of knowledge from the Star Wars universe from Episode I to Episode VI.</Text>
-    <InputText setRequest={setRequest}/>
+
+    <Container2>
     {Array.from(["people", "species", "starships", "planets", "vehicles", "films"]).map((e,i)=>{
       return (
         <div key={i}>
@@ -33,14 +35,21 @@ export default function App() {
         </div>
       )
     })}
-    </Container>
-    <Container>
+    </Container2>
+
+    <InputText setRequest={setRequest}/>
+    
+    <Container3>
     {data.length > 0 && data.map((r,i)=>
-      <div key={i}>
-        {r.name}
-      </div>
+      <ul key={i}>
+        <li>{r.name}</li>
+      </ul>
     )}
-    </Container>
+    </Container3>
+    
+
+
+    </Container1>
     <Footer className="fixed-bottom text-center py-1.5">Data from <a href="https://swapi.co/" className="card-link">SWAPI.co</a></Footer>
     </>
   )
